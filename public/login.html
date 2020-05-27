@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HTML5 boilerplate – all you really need…</title>
+  <link rel='stylesheet' href='/stylesheets/bootswatch_spacelab.min.css'>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/login.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body id="home" class='container text-center' >
+  <form class="form-signin" action='/users/authenticate' method='POST'>
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+    <label for="inputEmail" class="sr-only">Username:</label>
+    <input type="text" id="inputUsername" name="username"class="form-control" placeholder="Username" required autofocus>
+    <label for="inputPassword" class="sr-only">Password:</label>
+    <input type="password" id="inputPassword" name="password"class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+  </form>
+</body>
+</html>
